@@ -1,7 +1,7 @@
 import React from 'react'
-import MailSent from "../assets/mail_sent.png";
+import MailSent from "../../assets/mail_sent.png";
 import Footer from '../Footer/Footer';
-import NavbarMain from './NavbarMain';
+import NavbarMain from "../NavbarMain//NavbarMain";
 import { useState, useEffect } from 'react';
 export default function VerifyMail() {
     const [userDetails, setUserDetails] = useState({});

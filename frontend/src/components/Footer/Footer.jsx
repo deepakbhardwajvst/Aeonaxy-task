@@ -1,5 +1,5 @@
 import React from 'react'
-// import { faXTwitter } from '@fortawesome/free-solid-svg-icons';
+
 export default function Footer() {
     const list1 = ["For Designers", "Go Pro", "Explore Design work", "Design blog", "Overtime podcast", "Playoffs", "Weekly Warm-Up", "Refer a Friend", "Code of Conduct"];
     const list2 = ["Hire Designers", "Post a job opening", "Post a freelance project", "Search for designers"];
@@ -8,7 +8,6 @@ export default function Footer() {
     const list5 = ["Directories", "Design jobs", "Designers for hire", "Freelance designers for hire", "Tags", "Places"];
     const list6 = ["Design assets", "Dribbble Marketplace", "Creative Market", "Fontspring", "Font Squirrel"];
     const list7 = ["Design Resources", "Freelancing", "Design Hiring", "Design Portfolio", "Design Education", "Creative Process", "Design Industry Trends"];
-    const list8 = ["For designers", "Hire designers", "Brands", "Company", "Directories", "Design assets", "Design Resources"];
     return (
         <footer className="bg-gray-200/30 h-[100%] mt-auto font-inter pt-12 px-14 w-full">
             <div className="flex tablet:flex-row justify-between border-b-2  border-gray-200/70 pb-8 flex-col tablet:gap-x-4">
