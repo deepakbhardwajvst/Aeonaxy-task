@@ -43,7 +43,7 @@ async function getPgVersion() {
         client.release();
     }
 }
-// getPgVersion();
+
 
 const createTableQuery = `
     CREATE TABLE IF NOT EXISTS users (
@@ -64,36 +64,7 @@ const insertDataQuery = `
     RETURNING *
 `;
 
-//  COMMENTED SQL QUERIES FOR CREATING AND DROPPING TABLE
-// pool.query(createTableQuery, (err, res) => {
-//     if (err) {
-//         console.error('Error creating table:', err);
-//     } else {
-//         console.log('Table created successfully');
-//     }
 
-//     // Close the connection pool
-//     pool.end();
-// });
-
-// pool.query("DROP TABLE users", (err, res) => {
-//     if (err) {
-//         console.error('Error dropping table:', err);
-//     }
-//     else {
-//         console.log('Table dropped successfully');
-//         pool.query(createTableQuery, (err, res) => {
-//             if (err) {
-//                 console.error('Error creating table:', err);
-//             } else {
-//                 console.log('Table created successfully');
-//             }
-
-//             // Close the connection pool
-//             pool.end();
-//         })
-//     }
-// })
 app.post('/signup', async (req, res) => {
     const { name, username, email, password } = req.body;
     try {
@@ -185,14 +156,13 @@ app.get('/get-profile/:id', (req, res) => {
         else {
             console.log('Data fetched successfully:', result.rows[0]);
             return res.json({ success: true, data: result.rows[0] });
-            // return res.json({ data: result })
+           
         }
     })
 })
 app.post('/send-email', async (req, res) => {
     const resendy = new resend.Resend(process.env.RESEND_API_KEY);
-    // const { email } = req.body;
-    // currently i don't have a domain , so I can't send email to any email address except mine
+   
     try {
         const data = await resendy.emails.send({
             from: 'Acme <onboarding@resend.dev>',
@@ -211,5 +181,5 @@ app.get('/', (req, res) => {
 })
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-    // selectAll();
+    
 })
