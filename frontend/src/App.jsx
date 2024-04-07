@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import CreateProfile from './components/CreateProfile';
-import SignUp from './components/SignUp';
+import CreateProfile from "./components/CreateProfile/CreateProfile";
+import SignUp from "./components/SignUp/SignUp";
 import Reason from './components/Reason';
 import VerifyMail from "./components/VerifyMail";
 import './App.css'
