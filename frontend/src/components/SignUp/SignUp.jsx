@@ -1,8 +1,8 @@
 import React from 'react'
-import CreatorSVG from "../assets/creators.svg";
+import CreatorSVG from "../../assets/creators.svg";
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import Loader from './Loader';
+import Loader from '../Loader/Loader';
 export default function SignUp() {
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);

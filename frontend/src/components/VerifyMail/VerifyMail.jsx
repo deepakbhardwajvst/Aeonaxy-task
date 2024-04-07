@@ -1,6 +1,6 @@
 import React from 'react'
 import MailSent from "../assets/mail_sent.png";
-import Footer from './Footer';
+import Footer from '../Footer/Footer';
 import NavbarMain from './NavbarMain';
 import { useState, useEffect } from 'react';
 export default function VerifyMail() {

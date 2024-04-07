@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from '../Navbar/Navbar';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Hire from "../assets/hire.svg"
-import Working from "../assets/working.svg";
-import Ideas from "../assets/ideas.svg";
-import Loader from './Loader';
+import Hire from "../../assets/hire.svg"
+import Working from "../../assets/working.svg";
+import Ideas from "../../assets/ideas.svg";
+import Loader from '../Loader/Loader';
 export default function Reason() {
     const navigate = useNavigate();
     const [userDetails, setUserDetails] = useState({});
