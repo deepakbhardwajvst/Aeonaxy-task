@@ -2,7 +2,7 @@ import { useState } from 'react'
 import CreateProfile from "./components/CreateProfile/CreateProfile";
 import SignUp from "./components/SignUp/SignUp";
 import Reason from "./components/Reason/Reason";
-import VerifyMail from "./components/VerifyMail";
+import VerifyMail from "./components/VerifyMail/VerifyMail";
 import './App.css'
 import {
   createBrowserRouter,
