@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Navbar from './Navbar'
+import Navbar from "../Navbar/Navbar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
-import Loader from "./Loader/Loader";
+import Loader from '../Loader/Loader';
 export default function CreateProfile() {
     const navigate = useNavigate();
     const [image, setImage] = useState(null);
